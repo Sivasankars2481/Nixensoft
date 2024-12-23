@@ -1,0 +1,60 @@
+nav {
+  background-color: #07124b; /* Dark background for the nav */
+  padding: 10px; /* Padding around the nav */
+}
+
+.Nav-bar {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between logo and links */
+}
+
+.Nav-bar img {
+  height: 50px; /* Set a fixed height for the logo */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some space between the logo and the brand name */
+}
+.img1
+{
+  display: flex;
+}
+.Nav-bar div {
+  color: white; /* Text color for the brand name */
+  font-size: 24px; /* Font size for the brand name */
+  margin-left: 0; /* Remove any left margin */
+}
+
+.Nav-links {
+  display: flex; /* Use flexbox for links */
+}
+
+.Nav-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  padding: 0 15px; /* Padding around links */
+}
+
+.Nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.contain
+{
+    height: 550px;
+    width:100%;
+    background-color: #07124b;
+    color:white; /* Dark background for the nav */
+    text-align: center;
+}
+.main-1
+{
+  padding: 1%;
+  height:550px;
+  
+}
+.main-4
+{
+  padding-top: 4%;
+  background-color: #07124b;
+  height: 550px;
+}
