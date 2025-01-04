@@ -52,9 +52,45 @@ nav {
   height:550px;
   
 }
-.main-4
+.main-3
 {
   padding-top: 4%;
-  background-color: #07124b;
+  background-color: #ffffff;
+  height: 550px;
+  color:black ;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  padding: 4%;  
+}
+.main-3 img 
+{
+  width: 50%;
+  height: 100%;
+  padding: 2.2%;
+  
+}
+.main-3-1
+{
+
+  gap: 1rem; 
+ 
+}
+.main-3-1 h1 
+{
+font-weight: bold;  
+font-size: 2rem;
+text-align: center;
+
+
+}
+.main-3-1 div{
+  font-family:'dyeLine';
+}
+
+.main-5
+{
+  padding-top: 4%;
+  background-color:  #07124b;
   height: 550px;
 }
