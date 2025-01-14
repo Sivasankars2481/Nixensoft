@@ -1,207 +1,156 @@
-nav {
-  background-color: #07124b; /* Dark background for the nav */
-  padding: 10px; /* Padding around the nav */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.Nav-bar {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space between logo and links */
+@font-face {
+  font-family: 'Inter';
+  src: url('inter.woff2') format('woff2'),
+    url('inter.woff') format('woff'),
+    url('inter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.Nav-bar img {
-  height: 50px; /* Set a fixed height for the logo */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add some space between the logo and the brand name */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
-.img1
-{
+
+/* Banner Styles */
+.banner {
+  background-color: #f9fafb;
+  /* Light gray background */
+  border: 1px solid #e5e7eb;
+  /* Border color */
+  padding: 1rem 1.5rem;
+  /* Padding */
   display: flex;
-}
-.Nav-bar div {
-  color: white; /* Text color for the brand name */
-  font-size: 24px; /* Font size for the brand name */
-  margin-left: 0; /* Remove any left margin */
-}
-
-.Nav-links {
-  display: flex; /* Use flexbox for links */
-}
-
-.Nav-links a {
-  color: white; /* Link color */
-  text-decoration: none; /* Remove underline */
-  padding: 0 15px; /* Padding around links */
+  /* Flexbox for layout */
+  justify-content: space-between;
+  /* Space between items */
+  align-items: flex-start;
+  /* Align items at the start */
+  position: fixed;
+  /* Fixed position */
+  width: 100%;
+  /* Full width */
+  z-index: 50;
+  /* Z-index for stacking */
 }
 
-.Nav-links a:hover {
-  text-decoration: underline; /* Underline on hover */
+.banner-head p {
+  color: #6b7280;
+  /* Text color */
+  font-size: 0.875rem;
+  /* Font size */
+  font-weight: 300;
+  /* Light font weight */
 }
 
-.contain
-{
-    height: 550px;
-    width:100%;
-    background-color: #07124b;
-    color:white; /* Dark background for the nav */
-    text-align: center;
-}
-.main-1
-{
-  padding: 1%;
-  height:550px;
-  background-image: url('./image/minimalistic-geometric-background-with-charts-generative-ai.jpg');
-  background-size: cover;
-  background-image: no-repeat; 
-}
-.main-3
-{
-  padding-top: 4%;
-  background-color: #ffffff;
-  height: 550px;
-  color:black ;
-  display: flex;
-  justify-content: center ;
-  align-items: center;
-  padding: 4%;  
-}
-.main-3 img 
-{
-  width: 50%;
-  height: 100%;
-  padding: 2.2%;
-  
-}
-.main-3-1
-{
-
-  gap: 1rem; 
- 
-}
-.main-3-1 h1 
-{
-font-weight: bold;  
-font-size: 2rem;
-text-align: center;
-
-
-}
-.main-3-1 div{
-  font-family:'dyeLine';
-}
-
-.main-5
-{
-  padding-top: 4%;
-  background-color:  #07124b;
-  height: 500px;
- 
- 
-}
-.main-5-1
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-
-}
-
-.main-5-1 .card1
-{
-  height: 250px;
-  width:400px;
-  background-color: #f9f4f4;
-  border-radius: 3%;
-  margin: 2.5%;
-  text-align: center;
-  padding: 2%;
-  box-shadow: 0 4px 8px 0 rgba(247, 247, 247, 0.2);
-}
-.main-5-1 a{
-  justify-items: center;
-}
-
-.main-6
-{
-  padding-top: 4%;
-  background-color: #ffffff;
-  height: 550px;
-  color:black ;
-  padding: 4%; 
-}
-.main-6 h1{
-  font-size: 2rem;
+.banner-head h1 {
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 2%;
-}
-.main-6 p
-{
-  font-size: 1.1rem;
- text-align: center;
-}
-.main-6-1   
-{ 
-  padding-top: 4% ;
-  display: flex;
-  justify-content: center;
-  
-  
-}
-.main-6-1 .trend p 
-{
- color:#5d5d5f;
+
 }
 
-/*----------Button---------*/
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.banner a {
+  color: #2563eb;
+  /* Link color */
+  font-weight: 500;
+  /* Medium font weight */
+  text-decoration: underline;
+  /* Underline */
 }
-.bn30 {
-  border: 5em;
+
+.banner button {
+  background: transparent;
+  /* Transparent background */
+  border: none;
+  /* No border */
+  color: #9ca3af;
+  /* Button color */
   cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  -webkit-transform: translate(0);
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-  padding: 0.7em 2em;
-  border-radius: 65px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  -webkit-transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s;
+  /* Pointer cursor */
+  padding: 0.375rem;
+  /* Padding */
+  border-radius: 0.375rem;
+  /* Rounded corners */
+}
+
+.banner .button-2:hover {
+  color: #111827;
+  /* Hover text color */
+}
+
+.banner-button {
+  align-items: center;
+  display: flex;
+  
+
+}
+.banner-button img{
+
+  width : 20px;
+  height: 100%;
+  padding-right: 4px;
+  
+}
+
+.banner-button .button-1 {
+  background-color:  #0f59f7;
   color: white;
+  font-size: small;
+  margin-right: 10px;
+  display: flex;
+  align-items:center ;
+  height: auto;
 }
 
-.bn30 .text {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+/* Header Styles */
+.dropbtn {
+ 
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.bn30:after {
-  content: "";
-  border-radius: 18px;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
   position: absolute;
-  margin: 4px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: #0e0e10;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.bn30:hover {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.bn30:hover .text {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-}
-/*----------Button---------*/
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
