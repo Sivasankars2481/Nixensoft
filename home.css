@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+
 }
 
 /* Banner Styles */
@@ -89,68 +90,75 @@ body {
 .banner-button {
   align-items: center;
   display: flex;
-  
+
 
 }
-.banner-button img{
 
-  width : 20px;
+.banner-button img {
+
+  width: 20px;
   height: 100%;
   padding-right: 4px;
-  
+
 }
 
 .banner-button .button-1 {
-  background-color:  #0f59f7;
+  background-color: #0f59f7;
   color: white;
   font-size: small;
   margin-right: 10px;
   display: flex;
-  align-items:center ;
+  align-items: center;
   height: auto;
 }
 
 /* Header Styles */
-.dropbtn {
- 
-  color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+nav {
+  background-color: rgb(226, 226, 226);
+  height: 50px;
+
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+width: 100vw;
+
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.navbar img {
+  width: 50%;
+  height: 30%
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.logo {
+  display: flex;
+  align-items: center ;
+  margin-top: -1%;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.logo img {
+  height: 50px;
+  /* Adjust the height to fit the navbar */
+  width: auto;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.navbar1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+}
+
+
+
+.navbar2 {
+  display: flex;
+  /* transform: translate(-100%, 10%); */
+  justify-content: center;
+  gap: 10px;
+}
